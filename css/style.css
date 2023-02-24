@@ -1,0 +1,52 @@
+html {
+    /* Variables de couleur */
+    --color-darkslategrey: darkslategrey;
+    --color-slategrey: slategrey;
+    --color-white: white;
+
+    font-family: 'Kantumruy Pro', sans-serif; 
+}
+
+.head {
+    height: 10em;
+    text-align: center;
+    background-color: var(--color-darkslategrey);
+}
+.head__navigation {
+    display: none;
+}
+.head__title {
+    color: var(--color-white);
+    font-size: 2.5em;
+    font-weight: 100;
+    letter-spacing: -0.07em;
+
+    /* Eviter le chevauchement sur les petites tailles d'ecran */
+    overflow: hidden;
+}
+.head__title span {
+    font-weight: 700;
+}
+.head__job {
+    color: var(--color-white);
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 0.25em;
+}
+.head__photo {
+    width: 25%;
+    border-radius: 50%;
+
+    position: relative;
+    top: 1em;
+
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkslategrey);
+    padding: 0.7vw;
+}
+
+
+
+/* Desktop */
+/* Afficher la barre de navigation */
