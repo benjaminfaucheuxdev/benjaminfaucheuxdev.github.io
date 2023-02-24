@@ -36,6 +36,7 @@ html {
 }
 .head__photo {
     width: 25%;
+    max-width: 12em;
     border-radius: 50%;
 
     position: relative;
