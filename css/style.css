@@ -13,11 +13,15 @@ html {
     height: 10em;
     text-align: center;
 
+    /* Fond du header - fusion d'une image et d'une couleur */
     background-color: var(--color-darkslategrey);
     background-image: url(https://picsum.photos/id/8/5000/3333);
     background-blend-mode: soft-light;
     background-size: cover;
     background-position: center;
+
+    /* Faire ressortir les textes - ombrage */
+    text-shadow: 0 0 1px #fff;
 }
 .head__navigation {
     display: none;
