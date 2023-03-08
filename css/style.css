@@ -1,34 +1,45 @@
-html {
+:root {
+    /* Font families */
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
     /* Variables de couleur */
     --color-darkslategrey: darkslategrey;
     --color-slategrey: slategrey;
     --color-white: white;
 
-    --color-transp-darkslategrey: rgb(47, 79, 79, 50%);
+    --color-transp-darkslategrey: rgb(47, 79, 79, 75%);
 
     font-family: 'Kantumruy Pro', sans-serif; 
+    /* font-family: var(--system-ui); */
+}
+
+
+.glowtext {
+    /* Faire ressortir les textes - ombrage */
+    text-shadow: 0 0 1px #fff;
+}
+.glowbox {
+    /* Faire ressortir les boites - ombrage */
+    box-shadow: 0 0 4px #fff;
 }
 
 .head {
-    height: 10em;
+    height: 15em;
     text-align: center;
 
     /* Fond du header - fusion d'une image et d'une couleur */
     background-color: var(--color-darkslategrey);
-    background-image: url(https://picsum.photos/id/8/5000/3333);
+    background-image: url(https://picsum.photos/id/60/600/400);
     background-blend-mode: soft-light;
     background-size: cover;
     background-position: center;
-
-    /* Faire ressortir les textes - ombrage */
-    text-shadow: 0 0 1px #fff;
 }
 .head__navigation {
     display: none;
 }
 .head__title {
     color: var(--color-white);
-    padding-top: 0.1em;
+    margin-top: 0.3em;
     font-size: 2.5em;
     font-weight: 100;
     letter-spacing: -0.07em;
@@ -44,21 +55,84 @@ html {
     font-size: 1.3em;
     font-style: italic;
     font-weight: 100;
-    margin-top: 0.25em;
+    margin-top: 0.3em;
 }
 .head__photo {
-    width: 25%;
-    max-width: 12em;
+    width: 7em;
     border-radius: 50%;
 
-    position: relative;
-    top: 1em;
-
+    margin-top: 1em;
+    
     background-color: var(--color-white);
     border: 1px solid var(--color-transp-darkslategrey);
-    padding: 0.7vw;
+    padding: 0.2em;
 }
 
+.career,
+.skills {
+    padding: 2em;
+}
+
+.skills {
+    background-color: #f7f7f7;
+}
+
+.career {
+    background-color: #eee;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.career__title,
+.skills__title {
+    text-align: center;
+    padding-bottom: 0.5em;
+
+    color: #666;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: -0.07em;
+}
+
+
+
+.career__formation,
+.career__experience {
+    padding: 1em;
+}
+
+
+.skills__list {
+    font-size: 0.7em;
+}
+.skills__list dt {
+    font-weight: bold;
+
+    float: left;
+    clear: both;
+    text-align: right;    
+    margin-right: 0.5em;
+    width: 25%;
+}
+.skills__list dd {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;    
+}
+
+
+@media screen ( min-width: 576px ) {
+    
+    .career__formation,
+    .career__experience {
+        width: 50%;
+    }
+    .career__experience {
+        border-right: 1px solid #999;
+        text-align: right;
+    }
+}
 
 
 /* Desktop */
