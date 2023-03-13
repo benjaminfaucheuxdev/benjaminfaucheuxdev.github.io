@@ -23,9 +23,12 @@
     box-shadow: 0 0 4px #fff;
 }
 
+/* Header */
 .head {
     height: 15em;
     text-align: center;
+    box-shadow: 0 -1em 1em 1em black;
+    position: relative;
 
     /* Fond du header - fusion d'une image et d'une couleur */
     background-color: var(--color-darkslategrey);
@@ -115,7 +118,7 @@
     margin-right: 0.5em;
     width: 25%;
 }
-.skills__list dd {
+.skills__list dd {  /* Gestion des débordements ... ellipsis */
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;    
